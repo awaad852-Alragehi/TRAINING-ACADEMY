@@ -89,6 +89,20 @@
            <section class="services" id="courses">
     <!-- دورة PMP المطورة -->
     <div class="service-card">
+       .services {
+           <section class="services" id="courses">
+    <!-- دورة PMP المطورة -->
+    <div class="service-card">
+        <!-- الفيديو التعريفي -->
+        <div class="video-container" style="margin-bottom: 20px; border-radius: 15px; overflow: hidden; background: #000;">
+            <!-- استبدل الرابط أدناه برابط فيديو من يوتيوب -->
+            <iframe width="100%" height="200" src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <i class="fas fa-project-diagram" style="color: var(--accent);"></i>
+        <h3>إدارة المشاريع الاحترافية (PMP)</h3>
+        
+        <div class="course-details" style="text-align: right; margin: 15px 0;"
         <!-- الفيديو التعريفي -->
         <div class="video-container" style="margin-bottom: 20px; border-radius: 15px; overflow: hidden; background: #000;">
             <!-- استبدل الرابط أدناه برابط فيديو من يوتيوب -->
