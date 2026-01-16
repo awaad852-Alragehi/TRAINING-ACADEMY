@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أكاديمية المهارات الإدارية | 2026</title>
     
-    <!-- تم إصلاح روابط المكتبات لتظهر الأيقونات والخطوط -->
+    <!-- تحديث مكتبة الأيقونات والخطوط لعام 2026 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com" rel="stylesheet">
     
@@ -58,7 +58,7 @@
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
             color: white;
-            padding: 80px 5%;
+            padding: 100px 5%;
             text-align: center;
         }
 
@@ -77,21 +77,25 @@
 
         .service-card {
             background: var(--white);
-            padding: 20px;
+            padding: 25px;
             border-radius: 20px;
             text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
             border-bottom: 5px solid var(--accent);
+            transition: transform 0.3s ease;
         }
+
+        .service-card:hover { transform: translateY(-10px); }
 
         .video-container {
             border-radius: 15px;
             overflow: hidden;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             background: #000;
             position: relative;
-            padding-bottom: 56.25%; /* نسبة 16:9 */
+            padding-bottom: 56.25%;
             height: 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         .video-container iframe {
@@ -102,24 +106,24 @@
 
         .course-features {
             text-align: right;
-            margin: 15px 0;
+            margin: 20px 0;
             list-style: none;
         }
 
-        .course-features li { margin-bottom: 8px; font-size: 0.9rem; }
-        .course-features li i { color: #27ae60; margin-left: 8px; }
+        .course-features li { margin-bottom: 10px; font-size: 0.95rem; display: flex; align-items: center; }
+        .course-features li i { color: #27ae60; margin-left: 10px; }
 
         .price-tag {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-weight: 800;
             color: var(--secondary);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .btn-booking {
             background: var(--accent);
             color: var(--primary);
-            padding: 12px;
+            padding: 14px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 800;
@@ -127,16 +131,24 @@
             transition: 0.3s;
         }
 
-        .btn-booking:hover { opacity: 0.9; transform: scale(1.05); }
+        .btn-booking:hover { background: var(--primary); color: white; }
 
         .contact-section {
-            background: var(--primary);
-            color: white;
-            padding: 40px 5%;
+            background: #f1f1f1;
+            padding: 60px 5%;
             text-align: center;
         }
 
-        footer { background: #111; color: white; padding: 20px; text-align: center; }
+        .contact-card {
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        footer { background: #111; color: white; padding: 25px; text-align: center; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -148,7 +160,7 @@
         </a>
         <nav>
             <a href="#courses">الدورات</a>
-            <a href="https://wa.me">تواصل معنا</a>
+            <a href="https://wa.me" target="_blank">تواصل معنا</a>
         </nav>
     </header>
 
@@ -159,17 +171,18 @@
 
     <section class="services" id="courses">
         
-        <!-- دورة PMP مع الفيديو الذي أرسلته -->
+        <!-- دورة PMP -->
         <div class="service-card">
             <div class="video-container">
+               <!-- استبدل ID الفيديو هنا بفيديو اليوتيوب الخاص بك -->
                <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
             </div>
-            <i class="fas fa-project-diagram" style="font-size: 2rem; color: var(--primary);"></i>
+            <i class="fas fa-project-diagram" style="font-size: 2.5rem; color: var(--primary);"></i>
             <h3>إدارة المشاريع الاحترافية (PMP)</h3>
             <ul class="course-features">
                 <li><i class="fas fa-check-circle"></i> شرح شامل لمنهجية الإصدار السابع</li>
                 <li><i class="fas fa-check-circle"></i> الحصول على 35 ساعة معتمدة</li>
-                <li><i class="fas fa-check-circle"></i> بنك أسئلة لمحاكاة الاختبار الحقيقي</li>
+                <li><i class="fas fa-check-circle"></i> بنك أسئلة لمحاكاة اختبارات 2026</li>
             </ul>
             <div class="price-tag">400 ريال</div>
             <a href="https://wa.me?text=أرغب%20في%20التسجيل%20بدورة%20PMP" class="btn-booking">حجز مقعد الآن</a>
@@ -180,11 +193,11 @@
             <div class="video-container">
                 <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
             </div>
-            <i class="fas fa-users" style="font-size: 2rem; color: var(--primary);"></i>
+            <i class="fas fa-users-gear" style="font-size: 2.5rem; color: var(--primary);"></i>
             <h3>القيادة الإبداعية والفعالة</h3>
             <ul class="course-features">
                 <li><i class="fas fa-check-circle"></i> تطوير مهارات التفكير القيادي</li>
-                <li><i class="fas fa-check-circle"></i> إدارة فرق العمل عن بعد</li>
+                <li><i class="fas fa-check-circle"></i> إدارة فرق العمل الهجينة</li>
                 <li><i class="fas fa-check-circle"></i> شهادة إتمام دورة معتمدة</li>
             </ul>
             <div class="price-tag">950 ريال</div>
@@ -196,12 +209,12 @@
             <div class="video-container">
                 <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
             </div>
-            <i class="fas fa-laptop-code" style="font-size: 2rem; color: var(--primary);"></i>
-            <h3>التحول الرقمي و AI</h3>
+            <i class="fas fa-microchip" style="font-size: 2.5rem; color: var(--primary);"></i>
+            <h3>التحول الرقمي و AI 2026</h3>
             <ul class="course-features">
-                <li><i class="fas fa-check-circle"></i> أدوات الذكاء الاصطناعي للمدراء</li>
-                <li><i class="fas fa-check-circle"></i> أتمتة العمليات الإدارية</li>
-                <li><i class="fas fa-check-circle"></i> مواكبة التحول الرقمي 2030</li>
+                <li><i class="fas fa-check-circle"></i> أدوات الذكاء الاصطناعي التوليدي</li>
+                <li><i class="fas fa-check-circle"></i> أتمتة العمليات (RPA) للمدراء</li>
+                <li><i class="fas fa-check-circle"></i> استراتيجيات رؤية 2030 الرقمية</li>
             </ul>
             <div class="price-tag">1200 ريال</div>
             <a href="https://wa.me?text=أرغب%20في%20التسجيل%20بدورة%20التحول%20الرقمي" class="btn-booking">حجز مقعد الآن</a>
@@ -210,9 +223,13 @@
     </section>
 
     <section class="contact-section">
-        <h2>تواصل معنا مباشرة</h2>
-        <p><i class="fab fa-whatsapp"></i> واتساب: 966533936881+</p>
-        <p><i class="fas fa-envelope"></i> ايميل: awaad852@gmail.com</p>
+        <div class="contact-card">
+            <h2>تواصل معنا مباشرة</h2>
+            <div style="margin-top: 20px;">
+                <p><i class="fab fa-whatsapp"></i> واتساب: 966533936881+</p>
+                <p><i class="fas fa-envelope"></i> ايميل: awaad852@gmail.com</p>
+            </div>
+        </div>
     </section>
 
     <footer>
